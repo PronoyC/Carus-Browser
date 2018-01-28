@@ -15,7 +15,7 @@
 
 Contributors - [Rashmeet](https://github.com/rsingh28) [Roshan](https://github.com/roshan2M) [Mahtab](https://github.com/dmahtab) [Pronoy](https://github.com/PronoyC)
 
-Promoting benevolence and compassion through an AI/Cryptocurrency-enabled browser.
+Mission Statement - Promoting benevolence and compassion through an AI/Cryptocurrency-enabled browser.
 
 Supported for macOS, Windows, and Linux.
 
