@@ -1,4 +1,6 @@
 Desjardins Financial Advice 
-Carus caters to an average user who is tapping into the crypto-currency world, which makes the role of financial advising even more crucial. Using Watsons’ personality insights API, Carus gets to know its user. Behavioral economics provides us with several models to observe and predict financial situation of an individual based on personality characteristics. Combining personality insights with behavioral economics, Carus passively directs the user to the appropriate financial advice offered by Desjardins. 
+Carus caters to an average user who is tapping into the crypto-currency world, which makes the role of financial 
+advising even more crucial. Using Watsons’ personality insights API, Carus gets to know its user. 
+Behavioral economics provides us with several models to observe and predict financial situation of an individual based on personality characteristics. Combining personality insights with behavioral economics, 
+Carus passively directs the user to the appropriate financial advice offered by Desjardins. 
 Personality aspects currently being analyzed: facet_trust, facet_achievement_striving, facet_cautiousness, facet_self_discipline, facet_anxiety, need_stability, value_self_enhancement
-
