@@ -34,6 +34,11 @@ class PreferenceNavigation extends ImmutableComponent {
           onClick={this.props.changeTab.bind(null, preferenceTabs.SEARCH)}
           selected={this.props.preferenceTab === preferenceTabs.SEARCH}
         />
+	<PreferenceNavigationButton icon={styles.dashboard}
+          l10nId='Dashboard'
+          onClick={this.props.changeTab.bind(null, preferenceTabs.SYNC)}
+          selected={this.props.preferenceTab === preferenceTabs.SYNC}
+        />
         <PreferenceNavigationButton icon={styles.tabs}
           l10nId='tabs'
           testId='tabsTabButton'
@@ -93,6 +98,7 @@ const styles = StyleSheet.create({
 
   general: navIcon(iconGeneral),
   search: navIcon(iconSearch),
+  dashboard: navIcon(iconSync),
   tabs: navIcon(iconTabs),
   plugins: navIcon(iconPlugins),
   security: navIcon(iconSecurity),

@@ -8,6 +8,7 @@ const _ = null
 const preferenceTabs = {
   GENERAL: _,
   SEARCH: _,
+  DASHBOARD: _,
   TABS: _,
   PLUGINS: _,
   SYNC: _,

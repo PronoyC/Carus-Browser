@@ -93,15 +93,19 @@ class SyncTab extends ImmutableComponent {
     }
     // displayed before a sync userId has been created
     return <section className={css(styles.setupContent)}>
-      <BrowserButton groupedItem primaryColor
-        l10nId='syncStart'
-        testId='syncStartButton'
-        onClick={this.props.showOverlay.bind(this, 'syncStart')}
+      <SortableTable
+        headings={['Charity']}
+        defaultHeading='syncDeviceLastActive'
+        defaultHeadingSortOrder='desc'
+        rows={this.devicesTableRows}
+        tableClassNames={css(styles.devices__devicesList)}
       />
-      <BrowserButton groupedItem secondaryColor
-        l10nId='syncAdd'
-        testId='syncAddButton'
-        onClick={this.props.showOverlay.bind(this, 'syncAdd')}
+      <SortableTable
+        headings={['Investment']}
+        defaultHeading='syncDeviceLastActive'
+        defaultHeadingSortOrder='desc'
+        rows={this.devicesTableRows}
+        tableClassNames={css(styles.devices__devicesList)}
       />
     </section>
   }
@@ -135,6 +139,7 @@ class SyncTab extends ImmutableComponent {
   get devicesTableRows () {
     const devices = this.props.syncData.get('devices')
     if (!devices) { return [] }
+
     return devices.map((device, id) => [
       {
         html: id,
