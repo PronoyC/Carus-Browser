@@ -11,7 +11,14 @@
 [![codecov.io](https://codecov.io/github/brave/browser-laptop/coverage.svg?branch=master)](https://codecov.io/gh/brave/browser-laptop?branch=master)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-# Carus Browser
+# Carus Browser - ConU Hacks 3 Project
+
+Contributors - 
+
+[Rashmeet](https://github.com/rsingh28) 
+[Roshan](https://github.com/roshan2M)
+[Mahtab](https://github.com/dmahtab)
+[Pronoy](https://github.com/PronoyC)
 
 Promoting benevolence and compassion through an AI/Cryptocurrency-enabled browser.
 
