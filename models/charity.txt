@@ -1,0 +1,4 @@
+Recommending Charity Organisations 
+Carus gets to know its user and using IBM’s Watson services, it recommends charity organizations which may interest the user. This is beneficial as many charity organizations go unnoticed due to their limited advertisement budgets. Carus provides an affordable avenue for these charities to reach users who are genuinely passionate about their issues. This also allows the user to become more informed and engaging member of the society. Watsons’ personality insights API is used to analyze user input to gauge aspects of the users the personality. Then this data is used to recommend charity organizations. In the future, machine learning and artificial intelligence techniques aim to make this system even better by studying the user's response to the suggestions. 
+Personality aspects currently being analyzed: facet_morality, facet_sympathy, facet_emotionality, need_harmony, value_conservation
+
