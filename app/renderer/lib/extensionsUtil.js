@@ -7,18 +7,18 @@ const {passwordManagers, extensionIds, thirdPartyPasswordManagers} = require('..
 const config = require('../../../js/constants/config')
 const settings = require('../../../js/constants/settings')
 
-const bitwarden = extensionIds[passwordManagers.BITWARDEN]
+//const bitwarden = extensionIds[passwordManagers.BITWARDEN]
 const brave = config.braveExtensionId
-const dashlane = extensionIds[passwordManagers.DASHLANE]
+//const dashlane = extensionIds[passwordManagers.DASHLANE]
 const enpass = extensionIds[passwordManagers.ENPASS]
-const lastpass = extensionIds[passwordManagers.LAST_PASS]
-const onepassword = extensionIds[passwordManagers.ONE_PASSWORD]
+//const lastpass = extensionIds[passwordManagers.LAST_PASS]
+//const onepassword = extensionIds[passwordManagers.ONE_PASSWORD]
 const pdfjs = config.PDFJSExtensionId
 const pocket = config.PocketExtensionId
 const sync = config.syncExtensionId
 const webtorrent = config.torrentExtensionId
 const vimium = config.vimiumExtensionId
-const honey = config.honeyExtensionId
+//const honey = config.honeyExtensionId
 const pinterest = config.pinterestExtensionId
 const metamask = config.metamaskExtensionId
 
@@ -30,19 +30,19 @@ const metamask = config.metamaskExtensionId
  * Properties such as name and description are referenced like keys for proper l10n
  */
 const dummyData = [
-  {
+  /*{
     id: bitwarden,
     name: 'bitwarden',
     description: 'bitwardenDesc',
     icon: 'img/extensions/bitwarden-128.png'
-  },
+  },*/
   // {
   //   id: pinterest,
   //   name: 'Pinterest Save',
   //   description: 'pinterestDesc',
   //   icon: 'img/extensions/pinterest-128.png'
   // }
-  {
+  /*{
     id: dashlane,
     name: 'dashlane',
     description: 'dashlaneDesc',
@@ -52,28 +52,28 @@ const dummyData = [
   //   name: 'enpass',
   //   description: 'enpassDesc',
   //   icon: 'img/extensions/enpass-128.png'
-  }, {
+  },*/ /*{
     id: lastpass,
     name: 'lastpass',
     description: 'lastpassDesc',
     icon: 'img/extensions/lastpass-128.png'
-  }, {
+  }, /*{
     id: onepassword,
     name: '1password',
     description: '1passwordDesc',
     icon: 'img/extensions/1password-128.png'
-  }, {
+  },*/ /*{
     id: pocket,
     name: 'saveToPocket',
     description: 'saveToPocketDesc',
     icon: 'img/extensions/pocket-128.png'
   },
-  {
+  /*{
     id: honey,
     name: 'honey',
     description: 'honeyDesc',
     icon: 'img/extensions/honey-128.png'
-  },
+  },*/
   {
     id: metamask,
     name: 'MetaMask',
@@ -141,39 +141,39 @@ module.exports.populateDefaultExtensions = (extensionsState) => {
 module.exports.getExtensionKey = (extensionId) => {
   let extensionSetting
   switch (extensionId) {
-    case bitwarden:
+    /*case bitwarden:
       extensionSetting = passwordManagers.BITWARDEN
-      break
-    case dashlane:
+      break*/
+    /*case dashlane:
       extensionSetting = passwordManagers.DASHLANE
-      break
+      break*/
     case enpass:
       extensionSetting = passwordManagers.ENPASS
       break
-    case lastpass:
+    /*case lastpass:
       extensionSetting = passwordManagers.LAST_PASS
-      break
-    case onepassword:
-      extensionSetting = passwordManagers.ONE_PASSWORD
-      break
-    case pdfjs:
-      extensionSetting = settings.PDFJS_ENABLED
-      break
+      break*/
+    // case onepassword:
+    //   extensionSetting = passwordManagers.ONE_PASSWORD
+    //   break
+    // case pdfjs:
+    //   extensionSetting = settings.PDFJS_ENABLED
+    //   break
     case pocket:
       extensionSetting = settings.POCKET_ENABLED
       break
-    case webtorrent:
-      extensionSetting = settings.TORRENT_VIEWER_ENABLED
-      break
+    // case webtorrent:
+    //   extensionSetting = settings.TORRENT_VIEWER_ENABLED
+    //   break
     case vimium:
       extensionSetting = settings.VIMIUM_ENABLED
       break
-    case honey:
+    /*case honey:
       extensionSetting = settings.HONEY_ENABLED
-      break
-    case pinterest:
-      extensionSetting = settings.PINTEREST_ENABLED
-      break
+      break*/
+    // case pinterest:
+    //   extensionSetting = settings.PINTEREST_ENABLED
+    //   break
     case metamask:
       extensionSetting = settings.METAMASK_ENABLED
       break
@@ -188,9 +188,9 @@ module.exports.getExtensionKey = (extensionId) => {
  * @param {String} extensionId - The current extension ID
  * @returns {Boolean} Wheter or not extension is built-in
  */
-module.exports.isBuiltInExtension = (extensionId) => {
-  return [brave, sync, webtorrent].includes(extensionId)
-}
+// module.exports.isBuiltInExtension = (extensionId) => {
+//   return [brave, sync, webtorrent].includes(extensionId)
+// }
 
 /**
  * Check whether or not extension is a password manager
