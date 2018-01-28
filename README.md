@@ -17,7 +17,7 @@ Promoting benevolence and compassion through an AI/Cryptocurrency-enabled browse
 
 Supported for macOS, Windows, and Linux.
 
-Bootstrapped from https://github.com/brave/browser-laptop
+Hard-Forked from https://github.com/brave/browser-laptop
 
 ## Downloads
 
