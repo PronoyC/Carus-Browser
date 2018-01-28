@@ -94,21 +94,36 @@ class SyncTab extends ImmutableComponent {
     // displayed before a sync userId has been created
     return <section className={css(styles.setupContent)}>
       <SortableTable
-        headings={['Charity']}
+        headings={['Recommended Charities']}
         defaultHeading='syncDeviceLastActive'
         defaultHeadingSortOrder='desc'
         rows={this.devicesTableRows}
         tableClassNames={css(styles.devices__devicesList)}
       />
-      <SortableTable
-        headings={['Investment']}
-        defaultHeading='syncDeviceLastActive'
-        defaultHeadingSortOrder='desc'
-        rows={this.devicesTableRows}
-        tableClassNames={css(styles.devices__devicesList)}
-      />
+     
     </section>
   }
+
+
+
+  get setupContent1 () {
+    if (this.setupError) {
+      return null
+    }
+    // displayed before a sync userId has been created
+    return <section className={css(styles.setupContent)}>
+      <SortableTable
+        headings={['Recommended Investment Options']}
+        defaultHeading='syncDeviceLastActive'
+        defaultHeadingSortOrder='desc'
+        rows={this.devicesTableRows}
+        tableClassNames={css(styles.devices__devicesList)}
+      />
+     
+    </section>
+  }
+
+
 
   get postSetupContent () {
     return <SettingsList>
@@ -161,6 +176,7 @@ class SyncTab extends ImmutableComponent {
       <DefaultSectionTitle data-l10n-id='syncDevices' data-test-id='syncDevices' />
       <SortableTable
         headings={['id', 'syncDeviceName', 'syncDeviceLastActive']}
+        element="Hello World"
         defaultHeading='syncDeviceLastActive'
         defaultHeadingSortOrder='desc'
         rows={this.devicesTableRows}
@@ -168,6 +184,8 @@ class SyncTab extends ImmutableComponent {
       />
     </section>
   }
+
+
 
   get qrcodeContent () {
     if (!this.isSetup) {
@@ -498,17 +516,54 @@ class SyncTab extends ImmutableComponent {
               'fa-question-circle': true
             })} />
           </a>
-          <div className={cx({
-            settingsListTitle: true,
-            [css(styles.subText)]: true
-          })} data-l10n-id='syncBetaMessage' />
+         
           {
             this.setupError
             ? this.errorContent
             : this.isSetup
               ? this.postSetupContent
-              : this.setupContent
+              : this.setupContent 
           }
+
+           <a href="http://www.cwp-csp.ca/"><div className={cx({
+            settingsListTitle: true,
+            [css(styles.subText)]: true
+          })} data-l10n-id='syncBetaMessage' /></a>
+
+           <a href="https://www.habitat.ca/"><div className={cx({
+            settingsListTitle: true,
+            [css(styles.subText)]: true
+          })} data-l10n-id='syncBetaMessage1' /></a>
+
+           <a href="http://hopeforjustice.org/"><div className={cx({
+            settingsListTitle: true,
+            [css(styles.subText)]: true
+          })} data-l10n-id='syncBetaMessage2' /></a>
+
+          {
+            this.setupError
+            ? this.errorContent
+            : this.isSetup
+              ? this.postSetupContent
+              : this.setupContent1 
+          }
+
+              <a href="https://www.centris.ca/en"><div className={cx({
+            settingsListTitle: true,
+            [css(styles.subText)]: true
+          })} data-l10n-id='syncBetaMessage3' /></a>
+
+             <a href="https://google.com/finance"> <div className={cx({
+            settingsListTitle: true,
+            [css(styles.subText)]: true
+          })} data-l10n-id='syncBetaMessage4' /></a>
+
+             <a href="[]
+https://www.sunlife.ca/"> <div className={cx({
+            settingsListTitle: true,
+            [css(styles.subText)]: true
+          })} data-l10n-id='syncBetaMessage5' /></a>
+
         </div>
       </section>
       {
@@ -560,7 +615,7 @@ const styles = StyleSheet.create({
     fontFamily: 'monospace'
   },
   subText: {
-    color: globalStyles.color.gray,
+    color: globalStyles.color.black,
     fontSize: '.9rem',
     marginTop: '.5rem'
   },
@@ -570,7 +625,7 @@ const styles = StyleSheet.create({
   },
   errorContent__setupError: {
     color: globalStyles.color.braveDarkOrange,
-    fontWeight: 'bold',
+    fontWeight: 'bolder',
     margin: `calc(${globalStyles.spacing.panelPadding} / 2) 0 ${globalStyles.spacing.dialogInsideMargin}`
   },
 
