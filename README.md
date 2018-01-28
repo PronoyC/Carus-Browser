@@ -11,15 +11,13 @@
 [![codecov.io](https://codecov.io/github/brave/browser-laptop/coverage.svg?branch=master)](https://codecov.io/gh/brave/browser-laptop?branch=master)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-# Brave Browser
+# Carus Browser
 
-Desktop browser for macOS, Windows, and Linux.
+Promoting benevolence and compassion through an AI/Cryptocurrency-enabled browser.
 
-Follow [@brave](https://twitter.com/brave) on Twitter for important news and announcements.
+Supported for macOS, Windows, and Linux.
 
-For other versions of our browser, please see:
-* iPhone - [brave/browser-ios](https://github.com/brave/browser-ios)
-* Android - [brave/browser-android-tabs](https://github.com/brave/browser-android-tabs)
+Bootstrapped from https://github.com/brave/browser-laptop
 
 ## Downloads
 
